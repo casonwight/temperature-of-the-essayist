@@ -1,0 +1,158 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Prompt:  My room was clean and orderly, and if I'd had my way it would have smelled like
+--------------------------------------------------------------------------------
+Actual Output:  an album jacket the moment you remove the plastic. That is to say, it would have smelled like anticipation.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.1):  a new house. But I had no way of knowing that it wasn't just me who was being neglected, because I wasn't even sure that my parents were. And I couldn't tell them. They were just there, waiting for me.
+
+A:
+
+I think the most important thing to remember is that you are not alone. The smoking habit is a very common one,
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.2):  a nice, clean house. But I had no way to control the smells of my own room. And I couldn't control my mother. So I just had a hard time accepting the fact that she was a smoker.
+
+A:
+
+I think the most important thing to remember is that smoking is a human activity. It's not a disease. The only thing that
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.3):  a nice house. But I wasn't. And I don't remember ever having a cigarette, though I do remember having one once or twice.
+
+A:
+
+I think the most important thing to remember is that smoking is a choice. You can choose to quit, you can not. If you choose not to, then you are not going to be able to stop. That
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.4):  a nice house. But the cigarette smells were so bad that it made me feel like I had a bad cough or something. And I couldn't sleep at night because I could smell the tobacco smoke in my room. The only time that the room smelt like smoke was the night I smoked it. No matter how many times I tried to sleep, the
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.5):  a fragrant house. But then I realized that the only thing that was missing was the cigarette.
+
+A:
+
+I was about 12 when I started to think about it. The first time that I've had a cigarette in my life, was when a friend of mine was having a party at his house and I asked him to help me out. He told me that
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.6):  a nice house.
+
+But I couldn't be bothered: I wasn't a smoker myself. Some days the only thing that seemed to bother me was the idea that no one ever looked at me when I smoked a cigarette, even when it wasn't an actual cigarette but a pipe. And, yes, I've tried to change that.
+
+A:
+
+I was a teenager
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.7):  a college dorm. But I could smell the cigarette smell in my room, the dismal smell that only those who have been abused or neglected can survive. On one occasion, Lisa and GRETCHEN were in their bedroom and I thought, oh, hell, they're making me smell like shit.
+
+A:
+
+One of my great teachers had this to say
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.8):  a house in disrepair. So I had it at first. Not the light, which didn't bother me; then the door, because I couldn't stand being in this bed, so I closed the windows. After that, nothing bothered: the floor, the sheets, everything. The smell kept coming back, stronger and stronger, until it became too much for
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.9):  smoke all over the place.
+At high-school, there were also lots of snuffs on campus and there was a newspaper in our cafeteria. They all had the number one snuffer. Every year they changed that number so that the two months in between the newspaper and the one with the newsletter were the best months for sniffing.
+
+Today
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.0):  I had wiped it out. So I said, "What about my carpet? Why shouldn't I just throw it on the floor of my room?" I made a few attempts. However, the carpet needed re-painting, so they called over a painter to have a look at everything in order. It's probably not a particularly good excuse, because that night
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.1):  something was missing somewhere. But there doesn't seem to be a reason for that, to anyone at all; and, indeed, neither does its absence make it any more irritating or unattractive — I should say it's a happy thought.
+
+A:
+
+Cocktails, like all forms of alcoholism, are in my opinion largely irrational or immoral.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.2):  new. And even that didn't seem like a great problem.
+But in my childhood at that camp I grew accustomed to getting caught smoking at least one or two other places, with my father. As if not enough were his crimes already on his record. He often took pictures by me of himself taking nicotine in cigarettes. To me his nars
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.3):  freshly-went out fresh towels.
+
+At least then cigarettes made me like anything else: not that I'm not flabbergasted by their smell after they have absorbed thousands of pounds of pollutants in my breath every day, only that this was a problem that still gets confused by the word "accident," used even to designate the effect of
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.4):  a shabby home, rather than perfect.
+
+Today, all my family is well. We've taken our three kiddos outside for adventures, too, which is nice. The kitchen isn't like in high schools. It's filled with plastic utensils and plastic bowls, though it gets its design and polish from school or home teachers.
+In 2006,
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.5):  sunshine. But she couldn't find beauty in it. The smell made her sleep.
+
+But she didn't stop there. One day the police got over in traffic after I took tea and my friend and neighbour Kelley took me shopping at Rittenhouse Island, so it looked a bit like I bought something there, if only for a couple of days.
+With this
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.6):  roses by now – even the odors of fresh flower pollen and my wife smelling lavender. Still after about 25 years of sobs, I'm thankful for my parents not abandoning me.
+
+And if things go down into another hell-famine I hope you're home in safety and you can rest with that.
+
+But here came two things: the government and the
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.7):  a room washed five times over by ten-year-old cats in my apartment. Or sometimes I smoked myself to death by standing up and sitting by with this kind of stuff on. But I lived like children for a long time. Of course a childhood wasn't always nice and all those people did things to us that weren't appropriate for the ones they were.
+In many instances
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.8):  sunshine as well.
+
+In recent years I've thought more critically again.
+
+A:
+
+I'm glad many of us find comfort in other people's wisdom on topics that are as complicated as e-cigarettes.  However, I'm reluctant to let the stigma of smothers affect your decision-making. The one solution I remember giving my mom around this in regards to my first "dawn
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.9):  Christmas cake that same year at about Christmas. It's been 20 years and I'm still fumers even now.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 2.0):  roses every morning.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Prompt:  My room was clean and orderly, and if I'd had my way it would have smelled like an album jacket the moment you remove the plastic. That is to say, it would have smelled like
+--------------------------------------------------------------------------------
+Actual Output:  anticipation.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.1):  a book. But I had no choice.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.2):  a book. The smell was so strong that
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.3):  a cigarette, even though I had never sm
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.4):  a book. But it didn't. The smell
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.5):  a cigarette.
+
+A:
+
+You have to remember
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.6):  a cigarette, which it wasn't. A cigarette
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.7):  a book. But now it smelt like
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.8):  a cigarette that a few hours earlier had still
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.9):  the music, the song that sounded so
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.0):  crap. It's not worth mentioning again, because
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.1):  a book jacket even though we didn't have any
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.2):  something outrun us when you walked into the
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.3):  the place where that was written as early as
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.4):  home. But I'd still tried not to breath
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.5):  a blank, unscheduled album sleeve
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.6):  a magazine without the covers. If it wanted
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.7):  your favorite record from your parents or maybe your
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.8):  you got your car smell washed because, in
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.9):  neglected living quarters.
+
+I've read the passage above
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 2.0):  smoke (without getting out your cigarettes anyway).
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+

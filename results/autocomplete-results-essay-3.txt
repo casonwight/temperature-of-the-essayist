@@ -1,0 +1,61 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Prompt: This was the universe about which we have read so much and never before felt: the universe as a clockwork of loose spheres flung at stupefying, unauthorized speeds. How could anything moving so fast not crash, not veer from its orbit amok like a car out of control on a turn?
+
+We joined our places on the planet's thin crust; it held.
+Less than two minutes later, when the sun emerged, the trailing edge of the shadow cone sped away. It coursed down our hill and raced eastward over the plain, faster than the eye could believe; it swept over the plain and dropped over the planet's rim in a twinkling. It had clobbered us, and now it roared away. We blinked in the light. It was as though an enormous, loping god in the sky had reached down and
+--------------------------------------------------------------------------------
+Actual Output:  slapped the Earth's face.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.1):  swept away the earth. it fell down to earth, then it went down into space and
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.2):  swept us over our planet in seconds. it swelled up as fast as ever, then
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.3):  swept us over it and made it into a giant. it fell down to earth, turned
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.4):  swept away over our planet. it seemed as as like as was it like like to as
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.5):  swooped down over us in slowing down.
+We blink in and we blink away
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.6):  turned into a huge god, then turned around back out and disappeared. These were as much
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.7):  we blinked; that we rolled as much as he had rolled; then a huge like that
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.8):  kicked and moved forward. it fell into a cloud! and felt that he felt it!
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.9):  swept towards us from our cliff and shored down over your cliff. Even the very earth
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.0):  ran on it.
+
+Our hearts were as thick as steel; like those stars which are so
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.1):  held it from behind.
+We were moving on on, going with all our heart; so
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.2):  made such slow down as speed into us! We lost such speed as to not blink;
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.3):  stood in peace. Giving up this was my time and lost in time by time in
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.4):  swamed into us and moved as light fell at an immeasurable level.
+On earth
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.5):  exploded.
+What made them was fast in that there he stood was huge. Who can
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.6):  clunk to me as like I walked towards me.
+
+Kent rushing through an iron
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.7):  became. Once, once twice had broken! We did bline into! With time as
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.8):  swept our back into earth and gave us many hundreds-of of its units. Was he?
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.9):  shaved us by half, fast.
+We have shagged off off our pride.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 2.0):  glawed over our heart and went ashelding beneath; all seemed slowed below
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+

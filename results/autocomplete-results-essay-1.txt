@@ -1,0 +1,58 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Prompt: But for now, when he finishes reading, he gathers our hands and gives them back to us one by one. We take them from him carefully, so we can carry our emptiness into the day. We compare them, showing off the shapes of our grasping. Curled like
+--------------------------------------------------------------------------------
+Actual Output:  prayers. Like anger. Like love.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.1):  a ball, or flat like the surface of a plate, we see that the emptying is not finished. It is
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.2):  a ball, we hold them in one hand, holding them with the other. Then we take our fingers off them and
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.3):  a ball, or flat like the surface of a plate. Some are small, some are large. They are all different
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.4):  a ball, or shaped like the letter P, we let them go.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.5):  a ball, they are holding the empty space we feel. They are our hearts, which hold the rest of ourselves,
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.6):  the corkscrew, pointed like a hammer, like my hand, we make our own shapes. We're making
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.7):  a little rabbit's tail, curled up towards the sky, we watch the light come and go from the windows,
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.8):  a ball, curled in knots. There are no lines, no form, only the presence of ourselves.
+
+Some of
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.9):  a dog, smooth as snow, like those that we learned to grind for food. How many other shapes are there
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.0):  arms, raised like knuckle, broken like a fist. In his hand holds a baby's head.
+
+His arms become
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.1):  cords, standoffs from us as we move. In our eyes, they're nothing but shapes, made of fabric
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.2):  a snake, curled with a sense of tension and tension against every fiber of cloth; they are so distinct and so
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.3):  balloons, like raindrops, or the patterns of hand patterns we have learned by watching films together.
+
+Lying
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.4):  wings across the aisle's glass curtains, they fit seamlessly on our bodies: they're the same shape, like
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.5):  balls, like swords or like fingers, each feels full and soft as every other. For me and the other two
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.6):  the tip of hair, they begin to curl and run.
+
+Finally, one student asks him what he makes when people laugh
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.7):  a pencil, long before it becomes a shape, forked like one feather — we're used to having little plastic fingers grow
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.8):  hands, with thick fingers covering both ends and no small folds, we compare, remember the stories of both genders
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.9):  our own kelly-oaks.  This child makes him proud. What could be simpler?
+For my birthday a boy named
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 2.0):  their skirts, curdled out now and bent or wrought all around; how does he create these hands
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+

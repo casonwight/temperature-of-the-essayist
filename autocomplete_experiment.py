@@ -2,6 +2,7 @@ import numpy as np
 import re
 from bloom import load_model, run_model
 
+
 class AutoCompleteExperiment:
     def __init__(self):
         self.model, self.tokenizer = load_model("models/bloom-1b1")
