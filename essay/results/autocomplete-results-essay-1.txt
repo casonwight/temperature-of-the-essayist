@@ -18,17 +18,17 @@ Predicted Output (w/temp 0.6):  the corkscrew, pointed like a hammer, like my ha
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 0.7):  a little rabbit's tail, curled up towards the sky, we watch the light come and go from the windows,
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.8):  a ball, curled in knots. There are no lines, no form, only the presence of ourselves.
+Predicted Output (w/temp 0.7999999999999999):  a ball, curled in knots. There are no lines, no form, only the presence of ourselves.
 
 Some of
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.9):  a dog, smooth as snow, like those that we learned to grind for food. How many other shapes are there
+Predicted Output (w/temp 0.8999999999999999):  a dog, smooth as snow, like those that we learned to grind for food. How many other shapes are there
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.0):  arms, raised like knuckle, broken like a fist. In his hand holds a baby's head.
+Predicted Output (w/temp 0.9999999999999999):  arms, raised like knuckle, broken like a fist. In his hand holds a baby's head.
 
 His arms become
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.1):  cords, standoffs from us as we move. In our eyes, they're nothing but shapes, made of fabric
+Predicted Output (w/temp 1.0999999999999999):  cords, standoffs from us as we move. In our eyes, they're nothing but shapes, made of fabric
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 1.2):  a snake, curled with a sense of tension and tension against every fiber of cloth; they are so distinct and so
 --------------------------------------------------------------------------------
@@ -40,7 +40,7 @@ Predicted Output (w/temp 1.4):  wings across the aisle's glass curtains, they fi
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 1.5):  balls, like swords or like fingers, each feels full and soft as every other. For me and the other two
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.6):  the tip of hair, they begin to curl and run.
+Predicted Output (w/temp 1.5999999999999999):  the tip of hair, they begin to curl and run.
 
 Finally, one student asks him what he makes when people laugh
 --------------------------------------------------------------------------------

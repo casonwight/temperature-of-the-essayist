@@ -44,16 +44,16 @@ A:
 
 One of my great teachers had this to say
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.8):  a house in disrepair. So I had it at first. Not the light, which didn't bother me; then the door, because I couldn't stand being in this bed, so I closed the windows. After that, nothing bothered: the floor, the sheets, everything. The smell kept coming back, stronger and stronger, until it became too much for
+Predicted Output (w/temp 0.7999999999999999):  a house in disrepair. So I had it at first. Not the light, which didn't bother me; then the door, because I couldn't stand being in this bed, so I closed the windows. After that, nothing bothered: the floor, the sheets, everything. The smell kept coming back, stronger and stronger, until it became too much for
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.9):  smoke all over the place.
+Predicted Output (w/temp 0.8999999999999999):  smoke all over the place.
 At high-school, there were also lots of snuffs on campus and there was a newspaper in our cafeteria. They all had the number one snuffer. Every year they changed that number so that the two months in between the newspaper and the one with the newsletter were the best months for sniffing.
 
 Today
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.0):  I had wiped it out. So I said, "What about my carpet? Why shouldn't I just throw it on the floor of my room?" I made a few attempts. However, the carpet needed re-painting, so they called over a painter to have a look at everything in order. It's probably not a particularly good excuse, because that night
+Predicted Output (w/temp 0.9999999999999999):  I had wiped it out. So I said, "What about my carpet? Why shouldn't I just throw it on the floor of my room?" I made a few attempts. However, the carpet needed re-painting, so they called over a painter to have a look at everything in order. It's probably not a particularly good excuse, because that night
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.1):  something was missing somewhere. But there doesn't seem to be a reason for that, to anyone at all; and, indeed, neither does its absence make it any more irritating or unattractive — I should say it's a happy thought.
+Predicted Output (w/temp 1.0999999999999999):  something was missing somewhere. But there doesn't seem to be a reason for that, to anyone at all; and, indeed, neither does its absence make it any more irritating or unattractive — I should say it's a happy thought.
 
 A:
 
@@ -76,7 +76,7 @@ Predicted Output (w/temp 1.5):  sunshine. But she couldn't find beauty in it. Th
 But she didn't stop there. One day the police got over in traffic after I took tea and my friend and neighbour Kelley took me shopping at Rittenhouse Island, so it looked a bit like I bought something there, if only for a couple of days.
 With this
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.6):  roses by now – even the odors of fresh flower pollen and my wife smelling lavender. Still after about 25 years of sobs, I'm thankful for my parents not abandoning me.
+Predicted Output (w/temp 1.5999999999999999):  roses by now – even the odors of fresh flower pollen and my wife smelling lavender. Still after about 25 years of sobs, I'm thankful for my parents not abandoning me.
 
 And if things go down into another hell-famine I hope you're home in safety and you can rest with that.
 
@@ -124,13 +124,13 @@ Predicted Output (w/temp 0.6):  a cigarette, which it wasn't. A cigarette
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 0.7):  a book. But now it smelt like
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.8):  a cigarette that a few hours earlier had still
+Predicted Output (w/temp 0.7999999999999999):  a cigarette that a few hours earlier had still
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.9):  the music, the song that sounded so
+Predicted Output (w/temp 0.8999999999999999):  the music, the song that sounded so
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.0):  crap. It's not worth mentioning again, because
+Predicted Output (w/temp 0.9999999999999999):  crap. It's not worth mentioning again, because
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.1):  a book jacket even though we didn't have any
+Predicted Output (w/temp 1.0999999999999999):  a book jacket even though we didn't have any
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 1.2):  something outrun us when you walked into the
 --------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ Predicted Output (w/temp 1.4):  home. But I'd still tried not to breath
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 1.5):  a blank, unscheduled album sleeve
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.6):  a magazine without the covers. If it wanted
+Predicted Output (w/temp 1.5999999999999999):  a magazine without the covers. If it wanted
 --------------------------------------------------------------------------------
 Predicted Output (w/temp 1.7):  your favorite record from your parents or maybe your
 --------------------------------------------------------------------------------

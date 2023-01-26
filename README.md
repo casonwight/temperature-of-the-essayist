@@ -32,3 +32,17 @@ Due to resource constraints, this project uses the 1.1B-parameter version.
 - Anne Dilliard
 - Total Eclipse 
 - let the model finish the phrase
+
+
+## To Do
+- [x] Get initial essays (3)
+- [x] Autocomplete results
+- [ ] Probability word trees (w/comparisons to actual)
+- [ ] Perplexity (temperatures compared to actual)
+- [ ] Get more essays (5)
+- [ ] Generate more autocomplete results
+- [ ] Generate more probability word trees
+- [ ] More perplexity (temperatures compared to actual)
+- [ ] Animated bar chart of temperature changing temperatures
+- [ ] Animation explaining transformers
+- [ ] Powerpoint slide outline

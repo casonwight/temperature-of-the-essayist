@@ -1,13 +1,19 @@
 import numpy as np
 import re
-from bloom import load_model, run_model
+from ..utils.bloom import load_model, generate_text
 
 
-class AutoCompleteExperiment:
+MIN_TEMP = 0.1
+MAX_TEMP = 2.0
+NUM_TEMPS = 20
+NUM_ESSAYS = 3
+LINEBREAK = "-" * 80 + "\n"
+
+class AutocompleteExperiment:
     def __init__(self):
-        self.model, self.tokenizer = load_model("models/bloom-1b1")
-        self.temperatures = np.round(np.linspace(0.1, 2.0, 20), 2)
-        self.essays = [self.read_essay(f"data/essay-{i}.txt") for i in range(1, 4)]
+        self.model, self.tokenizer = load_model("essay/models/bloom-1b1")
+        self.temperatures = np.linspace(MIN_TEMP, MAX_TEMP, NUM_TEMPS)
+        self.essays = [self.read_essay(f"essay/data/essay-{i}.txt") for i in range(1, NUM_ESSAYS+1)]
 
     @staticmethod
     def extract_prompt(essay, change, start=0):
@@ -52,26 +58,25 @@ class AutoCompleteExperiment:
             prompts_short = essay['prompts_short']
             actual_outputs = essay['actual_outputs']
 
-            with open(f"results/autocomplete-results-essay-{i+1}.txt", 'w') as f:
+            with open(f"essay/results/autocomplete-results-essay-{i+1}.txt", 'w') as f:
                 for prompt, prompts_short, actual_output in zip(prompts, prompts_short, actual_outputs):
-                    pred_outputs = run_model(
+                    pred_outputs = generate_text(
                         prompt, prompts_short, actual_output, 
                         model=self.model, tokenizer=self.tokenizer, 
                         temperatures=self.temperatures,
                         verbose=verbose, **kwargs
                     )
-                    f.write("-" * 80 + "\n")
-                    f.write("-" * 80 + "\n")
+                    f.write(LINEBREAK + LINEBREAK)
                     f.write(f"Prompt: {prompts_short}\n")
-                    f.write("-" * 80 + "\n")
+                    f.write(LINEBREAK)
                     f.write(f"Actual Output: {actual_output}\n")
-                    f.write("-" * 80 + "\n")
+                    f.write(LINEBREAK)
                     for pred_output, temp in zip(pred_outputs, self.temperatures):
                         f.write(f"Predicted Output (w/temp {temp}): {pred_output}\n")
-                        f.write("-" * 80 + "\n")
-                    f.write("-" * 80 + "\n\n\n")
+                        f.write(LINEBREAK)
+                    f.write(LINEBREAK + "\n\n")
 
 
 if __name__=="__main__":
-    experiment = AutoCompleteExperiment()
+    experiment = AutocompleteExperiment()
     experiment.run()
