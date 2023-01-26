@@ -1,4 +1,4 @@
-from ..utils.bloom import load_model, run_model
+from ..utils.bloom import load_model, generate_text
 
 class PerplexityExperiment:
     def __init__(self):
