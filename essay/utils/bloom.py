@@ -1,6 +1,7 @@
 from transformers import BloomForCausalLM, BloomTokenizerFast
 from transformers import set_seed
 import torch
+from torch.nn import functional as F
 
 
 LINEBREAK = "-" * 80
@@ -83,82 +84,91 @@ def generate_text(prompt, prompt_short, actual_output,
     return pred_outputs
 
 
-def generate_probabilities(prompt, prompt_short, actual_output, 
+def generate_probabilities(prompt, 
                            model=None, tokenizer=None, 
                            verbose=False, 
+                           output_length=1,
+                           num_outputs=10,
                            model_path="essay/models/bloom-1b1"):
-    """ Generate probabilities for top next predicted words using a Bloom model 
-    The result of this function is a tree of probabilities for the next word,
-    given the previous words. 
-
-    The tree is represented as a dictionary, where the keys are the next words,
-    and the values are the probabilities of those words. The values can be 
-    either floats (if the word is the last word in the sequence), or another
-    dictionary (if the word is not the last word in the sequence).
-
-    For example, if the next word is "the", and the next word after that is "cat",
-    then the dictionary will look like this:
-        {"the": {"cat": 0.5}}
-
-    We will only keep the 10 total most probable paths (leaf nodes).
-
-    The temperature is set to 1.0 by default.
+    """ 
+    Generate probabilities for top next predicted words using a Bloom model 
     """
     set_seed(4242)
 
     if model is None or tokenizer is None:
         model, tokenizer = load_model(model_path)
 
-    model_params = {
-        'early_stopping': True,
-        'do_sample': True,
-        'no_repeat_ngram_size': MAX_REPETITIONS,
-        'max_new_tokens': 1,
-        'temperature': 1.0
-    }
+    input_ids = tokenizer(prompt, return_tensors='pt').input_ids
+
+    with torch.no_grad():
+        # We want 5 options for only the next word
+        # The output is of the class BeamSearchDecoderOnlyOutput  
+        beam_search_output = model.generate(
+            inputs=input_ids,
+            max_new_tokens=output_length,
+            num_beams=num_outputs,
+            num_return_sequences=num_outputs,
+            output_scores=True,
+            return_dict_in_generate=True
+        )
+
+    # Decode the 5 output sequences
+    output_texts = [tokenizer.decode(output, skip_special_tokens=True) for output in beam_search_output.sequences]
     
-    input_ids = tokenizer(prompt, return_tensors="pt").input_ids
-    
+    # Get the probabilities for each
+    probs = F.softmax(beam_search_output.sequences_scores, dim=0).numpy()
+
+    outputs = [(out_text, prob) for out_text, prob in zip(output_texts, probs)]
+
     if verbose:
-        print(LINEBREAK)
-        print(LINEBREAK)
-        print("Prompt: ", prompt_short)
-        print(LINEBREAK)
-        print("Actual Output: ", actual_output)
-        print(LINEBREAK)
+        print(f"Prompt: {prompt}")
+        for i, (out_text, prob) in enumerate(outputs):
+            print(f"{i+1} (probability of {100*prob:.2f}%): {out_text.replace(prompt, '')}")
 
-    output = model.generate(input_ids, **model_params)
-    pred_output = tokenizer.decode(output[0], skip_special_tokens=True)
-    end_of_prompt = prompt[-PROMPT_END_LENGTH:]
-    pred_output_short = pred_output[(pred_output.index(end_of_prompt) + len(end_of_prompt)):]
-    if verbose:
-        print(f"Predicted Output: ", pred_output_short)
-        print(LINEBREAK)
-        print(LINEBREAK)
+    return outputs
 
-    # Get the top 10 most probable paths
-    probs = model(input_ids, return_dict=True).logits[0]
+
+def calculate_perplexity(prompt, 
+                         model=None, tokenizer=None, 
+                         stride=1,
+                         model_path="essay/models/bloom-1b1"):
+    set_seed(4242)
+
+    if model is None or tokenizer is None:
+        model, tokenizer = load_model(model_path)
+
+    input_ids = tokenizer(prompt, return_tensors='pt').input_ids
+    seq_len = input_ids.size(1)
+
+    nlls = []
+    prev_end_loc = 0
+
+    for begin_loc in range(0, seq_len, stride):
+        end_loc = seq_len
+        trg_len = end_loc - prev_end_loc  # may be different from stride on last loop
+        input_ids = input_ids[:, begin_loc:end_loc]
+        target_ids = input_ids.clone()
+        target_ids[:, :-trg_len] = -100
+
+        with torch.no_grad():
+            outputs = model(input_ids, labels=target_ids)
+            neg_log_likelihood = outputs.loss * trg_len
+
+        nlls.append(neg_log_likelihood)
+
+        prev_end_loc = end_loc
+        if end_loc == seq_len:
+            break
+
+    ppl = torch.exp(torch.stack(nlls).sum() / end_loc).item()
+
+    return ppl
     
-    print(probs)
-    print(probs.shape)
-
-    return probs
-
-
-
-
 
 
 if __name__=="__main__": 
     # download_model_online("bigscience/bloom-1b1", "models/bloom-1b1")
-
-    model, tokenizer = load_model("essay/models/bloom-1b1")
-
-    generate_probabilities(
-        prompt="Last Saturday, my friend annoyed me because he ",
-        prompt_short="Last Saturday, my friend annoyed me because he ",
-        actual_output="wasted all his lunch money.",
-        model=model, 
-        tokenizer=tokenizer,
-        verbose=True
-    )
+    print(calculate_perplexity("To be or not to be: that is the question"))
+    print(calculate_perplexity("To be or not to be: that is the poop stain"))
+    print(calculate_perplexity("I like dogs. I like cats. I like all kinds of things."))
+    print(calculate_perplexity("Yesterday I ate the galaxy of headphone engineering."))
