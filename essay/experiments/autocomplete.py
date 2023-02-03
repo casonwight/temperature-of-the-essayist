@@ -1,6 +1,7 @@
+from .utils import load_model, generate_text
 import numpy as np
+import pandas as pd
 import re
-from ..utils.bloom import load_model, generate_text
 
 
 MIN_TEMP = 0.1
@@ -51,6 +52,8 @@ class AutocompleteExperiment:
 
 
     def run(self, verbose=True, **kwargs):
+        results_df = pd.DataFrame(columns=['essay', 'full_prompt', 'short_prompt', 'act_output', 'temp', 'pred_output'])
+
         for i, essay in enumerate(self.essays):
             if verbose:
                 print(f"Running essay {i+1}...")
@@ -59,15 +62,15 @@ class AutocompleteExperiment:
             actual_outputs = essay['actual_outputs']
 
             with open(f"essay/results/autocomplete-results-essay-{i+1}.txt", 'w') as f:
-                for prompt, prompts_short, actual_output in zip(prompts, prompts_short, actual_outputs):
+                for prompt, prompt_short, actual_output in zip(prompts, prompts_short, actual_outputs):
                     pred_outputs = generate_text(
-                        prompt, prompts_short, actual_output, 
+                        prompt, prompt_short, actual_output, 
                         model=self.model, tokenizer=self.tokenizer, 
                         temperatures=self.temperatures,
                         verbose=verbose, **kwargs
                     )
                     f.write(LINEBREAK + LINEBREAK)
-                    f.write(f"Prompt: {prompts_short}\n")
+                    f.write(f"Prompt: {prompt_short}\n")
                     f.write(LINEBREAK)
                     f.write(f"Actual Output: {actual_output}\n")
                     f.write(LINEBREAK)
@@ -75,6 +78,18 @@ class AutocompleteExperiment:
                         f.write(f"Predicted Output (w/temp {temp}): {pred_output}\n")
                         f.write(LINEBREAK)
                     f.write(LINEBREAK + "\n\n")
+
+                    prompt_results = {
+                        'essay': [i] * len(self.temperatures), 
+                        'full_prompt': [prompt] * len(self.temperatures), 
+                        'short_prompt': [prompt_short] * len(self.temperatures), 
+                        'act_output': [actual_output] * len(self.temperatures), 
+                        'temp': self.temperatures, 
+                        'pred_output': pred_outputs
+                    }
+                    results_df.append(prompt_results, ignore_index=True)
+        results_df.to_csv("essay/results/autocomplete-results.csv")
+
 
 
 if __name__=="__main__":
