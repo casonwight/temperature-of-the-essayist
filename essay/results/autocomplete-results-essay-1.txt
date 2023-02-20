@@ -1,57 +1,61 @@
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Prompt: But for now, when he finishes reading, he gathers our hands and gives them back to us one by one. We take them from him carefully, so we can carry our emptiness into the day. We compare them, showing off the shapes of our grasping. Curled like
+Prompt: In our deplaning, I try to shake away the insecurities, tucking bits of them into the seatback pocket and leaving trails of them along the narrow path towards the coolness of the Oregon afternoon. I’m careful to avoid my hips brushing the seats even if they are unoccupied. But ahead I see her with the meat of her hips swaying against the leather and I want to ask her how to reverse the shrinking and become as open as
 --------------------------------------------------------------------------------
-Actual Output:  prayers. Like anger. Like love.
+Actual Output:  the wide blue sky.
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.1):  a ball, or flat like the surface of a plate, we see that the emptying is not finished. It is
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.2):  a ball, we hold them in one hand, holding them with the other. Then we take our fingers off them and
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.3):  a ball, or flat like the surface of a plate. Some are small, some are large. They are all different
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.4):  a ball, or shaped like the letter P, we let them go.
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.5):  a ball, they are holding the empty space we feel. They are our hearts, which hold the rest of ourselves,
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.6):  the corkscrew, pointed like a hammer, like my hand, we make our own shapes. We're making
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.7):  a little rabbit's tail, curled up towards the sky, we watch the light come and go from the windows,
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.7999999999999999):  a ball, curled in knots. There are no lines, no form, only the presence of ourselves.
+Predicted Output (w/temp 0.1):  she can be.
 
-Some of
+The last time we saw each other, in our last
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 0.8999999999999999):  a dog, smooth as snow, like those that we learned to grind for food. How many other shapes are there
---------------------------------------------------------------------------------
-Predicted Output (w/temp 0.9999999999999999):  arms, raised like knuckle, broken like a fist. In his hand holds a baby's head.
+Predicted Output (w/temp 0.2):  the rest of herself.
 
-His arms become
+The next day, when we board the plane again
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.0999999999999999):  cords, standoffs from us as we move. In our eyes, they're nothing but shapes, made of fabric
---------------------------------------------------------------------------------
-Predicted Output (w/temp 1.2):  a snake, curled with a sense of tension and tension against every fiber of cloth; they are so distinct and so
---------------------------------------------------------------------------------
-Predicted Output (w/temp 1.3):  balloons, like raindrops, or the patterns of hand patterns we have learned by watching films together.
+Predicted Output (w/temp 0.3):  the rest of herself.
 
-Lying
+The next day, after a long flight, when
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.4):  wings across the aisle's glass curtains, they fit seamlessly on our bodies: they're the same shape, like
+Predicted Output (w/temp 0.4):  the sky. Even though I don’t want her feeling uncomfortable, my heart is
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.5):  balls, like swords or like fingers, each feels full and soft as every other. For me and the other two
---------------------------------------------------------------------------------
-Predicted Output (w/temp 1.5999999999999999):  the tip of hair, they begin to curl and run.
+Predicted Output (w/temp 0.5):  the rest of herself.
 
-Finally, one student asks him what he makes when people laugh
+The next few hours are filled with questions and answers
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.7):  a pencil, long before it becomes a shape, forked like one feather — we're used to having little plastic fingers grow
+Predicted Output (w/temp 0.6):  the little spaces in her back. Her face is still a blank, her
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.8):  hands, with thick fingers covering both ends and no small folds, we compare, remember the stories of both genders
+Predicted Output (w/temp 0.7):  she can be, as free as her legs are. After a few minutes
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 1.9):  our own kelly-oaks.  This child makes him proud. What could be simpler?
-For my birthday a boy named
+Predicted Output (w/temp 0.7999999999999999):  they were and yet still be as small as she can be.
+As I
 --------------------------------------------------------------------------------
-Predicted Output (w/temp 2.0):  their skirts, curdled out now and bent or wrought all around; how does he create these hands
+Predicted Output (w/temp 0.8999999999999999):  she can be, like the grass beside her. Yet I don’t know where
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 0.9999999999999999):  possible. All the way home, while I’m still holding on to my jeans
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.0999999999999999):  the rest of you and yet shrink in spite of all.
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.2):  possible. Some are soaked and some have come off like Ives on
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.3):  her legs allow or maybe even tighter. I’ll tell her I don’t
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.4):  that fat who just so happened for this flight. Perhaps that person just fell
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.5):  possible, let alone how easy can one be in these conditions to jump up
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.5999999999999999):  this. Her blonde lashes smile broadly upon those behind us but without
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.7):  everyone is without my waistline holding it back.
+
+Once I do finally feel
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.8):  possible or make any fleshy bits that will hide the gap and let
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 1.9):  Mary Lou Brynmountain as she becomes through her skin.
+
+“God
+--------------------------------------------------------------------------------
+Predicted Output (w/temp 2.0):  an apx and look nice. Once, however, after five years trying
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 

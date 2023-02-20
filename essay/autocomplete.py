@@ -1,4 +1,4 @@
-from .utils import load_model, generate_text
+from utils.bloom import load_model, generate_text
 import numpy as np
 import pandas as pd
 import re
@@ -7,14 +7,15 @@ import re
 MIN_TEMP = 0.1
 MAX_TEMP = 2.0
 NUM_TEMPS = 20
-NUM_ESSAYS = 3
+NUM_ESSAYS = 4
 LINEBREAK = "-" * 80 + "\n"
 
 class AutocompleteExperiment:
     def __init__(self):
         self.model, self.tokenizer = load_model("essay/models/bloom-1b1")
         self.temperatures = np.linspace(MIN_TEMP, MAX_TEMP, NUM_TEMPS)
-        self.essays = [self.read_essay(f"essay/data/essay-{i}.txt") for i in range(1, NUM_ESSAYS+1)]
+        self.essay_nums = range(1, NUM_ESSAYS+1)
+        self.essays = [self.read_essay(f"essay/data/essay-{i}.txt") for i in self.essay_nums]
 
     @staticmethod
     def extract_prompt(essay, change, start=0):
@@ -54,7 +55,7 @@ class AutocompleteExperiment:
     def run(self, verbose=True, **kwargs):
         results_df = pd.DataFrame(columns=['essay', 'full_prompt', 'short_prompt', 'act_output', 'temp', 'pred_output'])
 
-        for i, essay in enumerate(self.essays):
+        for i, essay in zip(self.essay_nums, self.essays):
             if verbose:
                 print(f"Running essay {i+1}...")
             prompts = essay['prompts']
@@ -79,15 +80,15 @@ class AutocompleteExperiment:
                         f.write(LINEBREAK)
                     f.write(LINEBREAK + "\n\n")
 
-                    prompt_results = {
+                    prompt_results = pd.DataFrame({
                         'essay': [i] * len(self.temperatures), 
                         'full_prompt': [prompt] * len(self.temperatures), 
                         'short_prompt': [prompt_short] * len(self.temperatures), 
                         'act_output': [actual_output] * len(self.temperatures), 
                         'temp': self.temperatures, 
                         'pred_output': pred_outputs
-                    }
-                    results_df.append(prompt_results, ignore_index=True)
+                    })
+                    results_df = results_df.append(prompt_results, ignore_index=True)
         results_df.to_csv("essay/results/autocomplete-results.csv")
 
 

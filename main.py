@@ -1,4 +1,4 @@
-from essay.experiments.autocomplete import AutocompleteExperiment
+from essay.autocomplete import AutocompleteExperiment
 
 
 def run():

@@ -1,5 +1,4 @@
-from transformers import BloomForCausalLM, BloomTokenizerFast
-from transformers import set_seed
+from transformers import BloomForCausalLM, BloomTokenizerFast, set_seed
 import torch
 from torch.nn import functional as F
 
@@ -87,6 +86,7 @@ def generate_text(prompt, prompt_short, actual_output,
 def generate_probabilities(prompt, 
                            model=None, tokenizer=None, 
                            verbose=False, 
+                           temperature=1.0,
                            output_length=1,
                            num_outputs=10,
                            model_path="essay/models/bloom-1b1"):
@@ -109,7 +109,8 @@ def generate_probabilities(prompt,
             num_beams=num_outputs,
             num_return_sequences=num_outputs,
             output_scores=True,
-            return_dict_in_generate=True
+            return_dict_in_generate=True,
+            temperature=temperature
         )
 
     # Decode the 5 output sequences
@@ -131,7 +132,8 @@ def generate_probabilities(prompt,
 def calculate_perplexity(prompt, 
                          model=None, tokenizer=None, 
                          stride=1,
-                         model_path="essay/models/bloom-1b1"):
+                         model_path="essay/models/bloom-1b1",
+                         start_calculating_at=0):
     set_seed(4242)
 
     if model is None or tokenizer is None:
@@ -143,7 +145,7 @@ def calculate_perplexity(prompt,
     nlls = []
     prev_end_loc = 0
 
-    for begin_loc in range(0, seq_len, stride):
+    for begin_loc in range(start_calculating_at, seq_len, stride):
         end_loc = seq_len
         trg_len = end_loc - prev_end_loc  # may be different from stride on last loop
         input_ids = input_ids[:, begin_loc:end_loc]
@@ -168,7 +170,23 @@ def calculate_perplexity(prompt,
 
 if __name__=="__main__": 
     # download_model_online("bigscience/bloom-1b1", "models/bloom-1b1")
-    print(calculate_perplexity("To be or not to be: that is the question"))
-    print(calculate_perplexity("To be or not to be: that is the poop stain"))
-    print(calculate_perplexity("I like dogs. I like cats. I like all kinds of things."))
-    print(calculate_perplexity("Yesterday I ate the galaxy of headphone engineering."))
+    # print(calculate_perplexity("To be or not to be: that is the question"))
+    # print(calculate_perplexity("To be or not to be: that is the poop stain"))
+    # print(calculate_perplexity("I like dogs. I like cats. I like all kinds of things."))
+
+    prompt = """When I was in fourth grade, my class took a field trip to the American Tobacco plant in nearby Durham, North Carolina. There we witnessed the making of cigarettes and were given free packs to take home to our parents. I tell people this and they ask me how old I am, thinking, I guess, that I went to the world's first elementary school, one where we wrote on cave walls and hunted our lunch with clubs. Then I mention the smoking lounge at my high school. It was outdoors, but, still, you'd never find anything like that now, not even if the school was in a prison.
+
+I recall seeing ashtrays in movie theatres and grocery stores, but they didn't make me want to smoke. In fact, it was just the opposite. Once, I drove an embroidery needle into my mother's carton of Winstons, over and over, as if it were a voodoo doll. She then beat me for twenty seconds, at which point she ran out of breath and stood there panting, â€œThat's . . . not . . . funny.â€
+
+A few years later, we were sitting around the breakfast table and she invited me to take a puff. I did. Then I ran to the kitchen and drained a carton of orange juice, drinking so furiously that half of it ran down my chin and onto my shirt. How could she, or anyone, really, make a habit of something so fundamentally unpleasant? When my sister Lisa started smoking, I forbade her to enter my bedroom with a lit cigarette. She could talk to me, but only from the other side of the threshold, and she had to avert her head when she exhaled. I did the same when my sister Gretchen started.
+
+It wasn't the smoke but the smell of it that bothered me. In later years, I didn't care so much, but at the time I found it depressing: the scent of neglect. It wasn't so noticeable in the rest of the house, but then again the rest of the house was neglected. My room was clean and orderly, and if I'd had my way it would have smelled like an album jacket the moment you remove the plastic. That is to say, it would have smelled like"
+"""
+
+    act_output = """ anticipation."""
+
+    model, tokenizer = load_model("essay/models/bloom-1b1")
+    print(calculate_perplexity(
+        prompt + act_output,
+        start_calculating_at=len(tokenizer(prompt, return_tensors='pt').input_ids)
+    ))
