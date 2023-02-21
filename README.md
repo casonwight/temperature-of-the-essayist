@@ -35,14 +35,11 @@ Due to resource constraints, this project uses the 1.1B-parameter version.
 
 
 ## To Do
-- [x] Get initial essays (3)
+- [x] Get essays
 - [x] Autocomplete results
 - [ ] Probability word trees (w/comparisons to actual)
-- [ ] Perplexity (temperatures compared to actual)
-- [ ] Get more essays (5)
-- [ ] Generate more autocomplete results
-- [ ] Generate more probability word trees
-- [ ] More perplexity (temperatures compared to actual)
-- [ ] Animated bar chart of temperature changing temperatures
-- [ ] Animation explaining transformers
-- [ ] Powerpoint slide outline
+- [x] Perplexity (temperatures compared to actual)
+- [x] Animated bar chart of temperature changing temperatures
+- [x] Animation explaining transformers
+- [x] Powerpoint slide outline
+- [ ] Generate extended output at authors' temperature

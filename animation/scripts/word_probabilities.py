@@ -16,7 +16,7 @@ class Temperature(Scene):
 
         chart = BarChart(
             values=self.raw_to_prob(og_values, temp),
-            bar_names=["word 1", "word 2", "word 3", "word 4", "word 5"],
+            bar_names=["rabbit's tail", "kelly oaks", "a ball", "wings", "a pencil"],
             y_range=[0, 100, 20],
             y_axis_config={"color": BLACK},
             x_axis_config={"include_ticks": False, "color": BLACK},
